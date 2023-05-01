@@ -3,6 +3,7 @@ body {
   font-family: 'Proxima Nova', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #323F47;
 }
 
 code {
@@ -21,4 +22,8 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }

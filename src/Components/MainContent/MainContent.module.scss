@@ -104,3 +104,15 @@
 .tab:not(:last-child) {
   margin-right: 40px;
 }
+
+.reactTabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  [class*='react-tabs__tab-panel--selected'] {
+    flex-grow: 3;
+    border-radius: 56px;
+    background-color: $color-light-gray;
+  }
+}
