@@ -20,7 +20,7 @@ const Navbar = () => {
           <LogoIcon/>
         </a>
         <ul className={s.navList}>
-          {navIcons.map(icon => <li className={s.navItem}>
+          {navIcons.map(icon => <li key={navIcons.indexOf(icon)} className={s.navItem}>
             <button>
               {icon}
             </button>

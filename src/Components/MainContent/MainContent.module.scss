@@ -1,4 +1,106 @@
+@import '/src/shared/styles/colors';
+@import '/src/shared/styles/fonts';
+
 .mainContent {
+  margin-left: -50px;
   height: 100%;
+  width: calc(100% - 121px);
   border-radius: 56px;
+  background-color: $color-white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 40px;
+  gap: 40px;
+
+  .headerLeft {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.buttons {
+  display: flex;
+  margin-right: 40px;
+}
+
+.button {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(210, 209, 209, 0.5);
+
+  svg {
+    position: absolute;
+    top: calc(50% - 10px);
+  }
+}
+
+.buttonLeft {
+  margin-right: 8px;
+
+  svg {
+    left: calc(50% - 7px);
+  }
+}
+
+.buttonRight {
+  svg {
+    right: calc(50% - 7px);
+  }
+}
+
+.tabWrapper {
+  max-width: 752px;
+  overflow-x: scroll;
+}
+
+.tablist {
+  display: flex;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid $color-gray;
+
+  [class*='react-tabs__tab--selected'] {
+    color: $color-dark-gray;
+    font-weight: $fw-bold;
+  }
+
+  [class*='react-tabs__tab--selected']:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4.5px;
+    bottom: -15px;
+    left: 0;
+    background-color: $color-green;
+    border-radius: 8px;
+  }
+}
+
+/* хром, сафари */
+.tabWrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ie 10+ */
+.tabWrapper {
+  -ms-overflow-style: none;
+}
+
+.tab {
+  position: relative;
+  font-size: 16px;
+  font-weight: $fw-semibold;
+  color: $color-gray;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+}
+
+.tab:not(:last-child) {
+  margin-right: 40px;
 }

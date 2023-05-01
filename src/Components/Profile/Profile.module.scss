@@ -1,0 +1,22 @@
+@import '/src/shared/styles/colors';
+@import '/src/shared/styles/fonts';
+
+.profile {
+  display: flex;
+  gap: 23px;
+}
+
+.profileData {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: $fw-bold;
+  color: $color-dark-gray;
+}
+
+.position {
+  color: $color-medium-gray;
+  white-space: nowrap;
+}
