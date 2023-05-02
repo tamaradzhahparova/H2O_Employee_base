@@ -58,3 +58,13 @@
   color: #6D7986;
   font-weight: $fw-semibold;
 }
+
+.select {
+  margin-left: 15px;
+  padding: 3px 7px;
+  border: 1.5px solid $color-light-gray;
+  border-radius: 6px;
+  font-size: 12px;
+  color: $color-dark-gray;
+  font-weight: $fw-semibold;
+}

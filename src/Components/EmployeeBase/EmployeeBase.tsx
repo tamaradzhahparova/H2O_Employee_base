@@ -47,7 +47,22 @@ const EmployeeBase = () => {
           total={TOTAL_EMPLOYEES_COUNT}
           className={s.pagination}
         />
-        <div>Отображать на страницу</div>
+        <div>
+          Отображать на страницу
+          <select
+            value={employeesPerPage}
+            onChange={(e) => setEmployeesPerPage(Number(e.target.value))}
+            className={s.select}
+          >
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+          </select>
+        </div>
       </div>
     </div>
   );

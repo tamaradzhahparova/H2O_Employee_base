@@ -53,7 +53,7 @@ const Table: FC<ITableProps> = ({ employees, firstEmployeeNubmer }) => {
             {employees.map((user, index) => (
               <tr key={user.id}>
                 <td>{firstEmployeeNubmer + index + 1}</td>
-                <td>{user.name}</td>
+                <td className={s.nameCell}>{user.name}</td>
                 <td>{user.id}</td>
                 <td>{user.tel}</td>
                 <td>{user.gender}</td>

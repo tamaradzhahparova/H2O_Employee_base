@@ -55,16 +55,16 @@ const MainContent = () => {
         </header>
 
         <TabPanel>
-          <h2>Any content 1</h2>
+          <h2>База анкет сотрудников</h2>
         </TabPanel>
         <TabPanel>
           <EmployeeBase />
         </TabPanel>
         <TabPanel>
-          <h2>Any content 3</h2>
+          <h2>База сотрудников</h2>
         </TabPanel>
         <TabPanel>
-          <h2>Any content 4</h2>
+          <h2>Календарь сотрудников</h2>
         </TabPanel>
       </Tabs>
     </main>

@@ -27,9 +27,22 @@
     font-size: 12px;
     font-weight: $fw-semibold;
 
+    tr:nth-child(odd) {
+      background-color: rgba(248, 248, 248, 0.5);
+    }
+
+    tr:nth-child(even) td:not(:nth-child(-n + 2)) {
+      background-color: rgba(229, 248, 246, 0.5);
+    }
+
     td {
       border: .7px solid $color-light-gray;
       padding: 20px;
     }
   }
+}
+
+.nameCell:hover {
+  cursor: pointer;
+  color: $color-green;
 }
