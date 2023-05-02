@@ -4,9 +4,10 @@ import { FC } from "react";
 
 interface ITableProps {
   employees: EmployeeType[];
+  firstEmployeeNubmer: number;
 }
 
-const Table: FC<ITableProps> = ({ employees }) => {
+const Table: FC<ITableProps> = ({ employees, firstEmployeeNubmer }) => {
   return (
     <div className={s.wrapper}>
       <div className={s.tableWrapper}>
@@ -49,9 +50,9 @@ const Table: FC<ITableProps> = ({ employees }) => {
             </tr>
           </thead>
           <tbody>
-            {employees.map((user) => (
+            {employees.map((user, index) => (
               <tr key={user.id}>
-                <td>{employees.indexOf(user) + 1}</td>
+                <td>{firstEmployeeNubmer + index + 1}</td>
                 <td>{user.name}</td>
                 <td>{user.id}</td>
                 <td>{user.tel}</td>
