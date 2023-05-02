@@ -1,0 +1,35 @@
+@import '/src/shared/styles/colors';
+@import '/src/shared/styles/fonts';
+
+.tableWrapper {
+  max-width: 100%;
+  overflow-x: scroll;
+  border-radius: 32px;
+  background-color: $color-white;
+}
+
+.table {
+  border-spacing: 0;
+  white-space: nowrap;
+
+  thead {
+    font-size: 12px;
+    color: $color-green;
+
+    th, td {
+      border: .7px solid $color-light-gray;
+      padding: 10px 30px 10px 15px;
+    }
+  }
+
+  tbody {
+    color: #6D7986;
+    font-size: 12px;
+    font-weight: $fw-semibold;
+
+    td {
+      border: .7px solid $color-light-gray;
+      padding: 20px;
+    }
+  }
+}
