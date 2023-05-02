@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/H2O_Employee_base/static/css/main.3b2f25e2.css",
+    "main.js": "/H2O_Employee_base/static/js/main.5d56a5e7.js",
+    "static/js/787.d00effc0.chunk.js": "/H2O_Employee_base/static/js/787.d00effc0.chunk.js",
+    "static/media/searchIcon.svg": "/H2O_Employee_base/static/media/searchIcon.097e0b585cf9465fec2b.svg",
+    "index.html": "/H2O_Employee_base/index.html",
+    "static/media/next.svg": "/H2O_Employee_base/static/media/next.20ec8de84ca085a88b91.svg",
+    "static/media/prev.svg": "/H2O_Employee_base/static/media/prev.f2644044e62d254c1ea6.svg",
+    "main.3b2f25e2.css.map": "/H2O_Employee_base/static/css/main.3b2f25e2.css.map",
+    "main.5d56a5e7.js.map": "/H2O_Employee_base/static/js/main.5d56a5e7.js.map",
+    "787.d00effc0.chunk.js.map": "/H2O_Employee_base/static/js/787.d00effc0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b2f25e2.css",
+    "static/js/main.5d56a5e7.js"
+  ]
+}
